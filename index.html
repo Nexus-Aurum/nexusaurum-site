@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Aurum Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #202427;
+      color: #fff;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #FFD700;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #202427, #000);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #FFD700;
+    }
+    .hero a {
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #FFD700;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h3 {
+      color: #FFD700;
+      font-size: 1.8rem;
+    }
+    .services, .languages {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background-color: #2a2e30;
+      padding: 1rem;
+      border-left: 5px solid #FFD700;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+    .lang-toggle {
+      text-align: center;
+      margin: 2rem;
+    }
+    .lang-toggle button {
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border: none;
+      background-color: #FFD700;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .faq, .apply {
+      margin-top: 2rem;
+    }
+    .faq details, .apply form {
+      background-color: #2a2e30;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+    .apply input, .apply textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('pt');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Nexus Aurum</h1>
+    <nav>
+      <a href="#about">Quem Somos</a>
+      <a href="#services">Serviços</a>
+      <a href="#languages">Idiomas</a>
+      <a href="#contact">Contato</a>
+      <a href="#faq">FAQ</a>
+      <a href="#apply">Trabalhe Conosco</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2 data-lang="pt">Serviços de Traduções, Interpretações e Consultoria em Comércio Exterior</h2>
+    <h2 data-lang="en">Translation, Interpretation and International Trade Consulting Services</h2>
+    <a href="https://api.whatsapp.com/send/?phone=5569999788887&text=Ol%C3%A1%20Hewdy,%20gostaria%20de%20um%20or%C3%A7amento">WhatsApp</a>
+    <a href="mailto:hewdy@nexusaurum.com.br">E-mail</a>
+  </div>
+
+  <section id="about">
+    <h3 data-lang="pt">Quem Somos</h3>
+    <p data-lang="pt">Hewdy Lopes é o fundador da Nexus Aurum Consulting. Mudou-se para os Estados Unidos aos 7 anos e viveu lá até os 14. Com isso, desenvolveu proficiência nativa em inglês e português. Com experiência nas áreas de mineração, exportação e comércio exterior, também atuou como professor de inglês. É certificado C2 pelo TOEFL e é tradutor juramentado. A Nexus Aurum oferece serviços de tradução e interpretação com foco nos pares de idiomas inglês e português.</p>
+    <p data-lang="en">Hewdy Lopes is the founder of Nexus Aurum Consulting. Having moved to the United States at the age of 7 and lived there until 14, he developed native fluency in both English and Portuguese. With professional experience in the mining, export, and international trade sectors, he has also worked as a bilingual English teacher. He holds a C2 TOEFL certification and is a sworn translator. Nexus Aurum provides high-quality translation and interpretation services focused on the English-Portuguese language pair.</p>
+  </section>
+
+  <section id="services">
+    <h3 data-lang="pt">Serviços</h3>
+    <h3 data-lang="en">Services</h3>
+    <div class="services">
+      <div class="card" data-lang="pt">Tradução Técnica</div>
+      <div class="card" data-lang="pt">Tradução Acadêmica</div>
+      <div class="card" data-lang="pt">Tradução Juramentada</div>
+      <div class="card" data-lang="pt">Acompanhamento Presencial</div>
+      <div class="card" data-lang="pt">Suporte Linguístico Personalizado</div>
+
+      <div class="card" data-lang="en">Technical Translation</div>
+      <div class="card" data-lang="en">Academic Translation</div>
+      <div class="card" data-lang="en">Sworn/Certified Translation</div>
+      <div class="card" data-lang="en">In-Person Language Assistance</div>
+      <div class="card" data-lang="en">Tailored Linguistic Support</div>
+    </div>
+  </section>
+
+  <section id="languages">
+    <h3 data-lang="pt">Idiomas</h3>
+    <h3 data-lang="en">Languages</h3>
+    <div class="languages">
+      <div class="card">🇺🇸 English ⇄ Portuguese 🇧🇷</div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h3 data-lang="pt">FAQ</h3>
+    <h3 data-lang="en">Frequently Asked Questions</h3>
+    <details data-lang="pt"><summary>Como é feito o envio e recebimento dos documentos?</summary><p>Por e-mail, em formato PDF, Word ou similar. Também aceitamos documentos escaneados.</p></details>
+    <details data-lang="pt"><summary>Quais são os prazos médios?</summary><p>Depende do tamanho do documento. Traduções pequenas podem ser feitas em 24-48h.</p></details>
+    <details data-lang="pt"><summary>Vocês fazem revisão de textos?</summary><p>Sim, inclusive com adaptação linguística e cultural.</p></details>
+
+    <details data-lang="en"><summary>How are documents delivered and received?</summary><p>Via email, in PDF, Word, or similar formats. We also accept scanned documents.</p></details>
+    <details data-lang="en"><summary>What are the average turnaround times?</summary><p>Depends on the document size. Small translations can be delivered within 24–48 hours.</p></details>
+    <details data-lang="en"><summary>Do you offer proofreading services?</summary><p>Yes, including linguistic and cultural adaptation.</p></details>
+  </section>
+
+  <section id="apply" class="apply">
+    <h3 data-lang="pt">Trabalhe Conosco</h3>
+    <h3 data-lang="en">Work With Us</h3>
+    <form>
+      <label data-lang="pt">Nome:</label>
+      <label data-lang="en">Name:</label><input type="text" name="name" />
+      <label data-lang="pt">E-mail:</label>
+      <label data-lang="en">Email:</label><input type="email" name="email" />
+      <label data-lang="pt">Idiomas:</label>
+      <label data-lang="en">Languages:</label><input type="text" name="languages" />
+      <label data-lang="pt">Link do Currículo:</label>
+      <label data-lang="en">Resume/CV Link:</label><input type="url" name="cv" />
+      <label data-lang="pt">Mensagem:</label>
+      <label data-lang="en">Message:</label><textarea name="message"></textarea>
+      <button type="submit" data-lang="pt">Enviar</button>
+      <button type="submit" data-lang="en">Submit</button>
+    </form>
+  </section>
+
+  <div class="lang-toggle">
+    <button onclick="switchLanguage('pt')">Português</button>
+    <button onclick="switchLanguage('en')">English</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Nexus Aurum Consulting. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
